@@ -10,3 +10,8 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+semantic.json
+node_modules/
+package-lock.json
+semantic/
+.idea/
