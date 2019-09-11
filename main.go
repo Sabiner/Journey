@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Journey/web/routers"
+	"Journey/web"
 	"fmt"
 	"net/http"
 	"time"
@@ -9,7 +9,7 @@ import (
 
 func main()  {
 
-	routersInit := routers.InitRouter()
+	routersInit := web.InitRouter()
 
 	s := &http.Server{
 		Addr:              ":8084",
