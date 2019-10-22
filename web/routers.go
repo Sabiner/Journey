@@ -12,7 +12,7 @@ func InitRouter() * gin.Engine {
 	v1 := r.Group("/api/v1")
 
 	r.LoadHTMLGlob("frontend/**/*")
-	r.Static("/semantic", "semantic")
+	r.Static("/bootstrap", "bootstrap")
 
 	r.GET("/", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "index.html", gin.H{
